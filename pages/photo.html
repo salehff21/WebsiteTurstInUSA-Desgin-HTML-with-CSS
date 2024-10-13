@@ -1,0 +1,182 @@
+<html>
+<head>
+    <title>Tourism in KSA</title>
+    <link rel="stylesheet" href="../layout/styles/layout.css" type="text/css" />
+    <style>
+      .image-container {
+          position: relative;
+          max-width: 80%;
+          margin: 0 auto;
+          padding: 20px;
+      }
+  
+      .image-container img {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 80%;
+          height: 480px;
+          border-radius: 40px;
+          opacity: 0;
+          animation: slideShow 24s infinite;
+      }
+  
+      .image-container img:nth-child(1) { animation-delay: 0s; }
+      .image-container img:nth-child(2) { animation-delay: 2s; }
+      .image-container img:nth-child(3) { animation-delay: 4s; }
+      .image-container img:nth-child(4) { animation-delay: 6s; }
+      .image-container img:nth-child(5) { animation-delay: 8s; }
+      .image-container img:nth-child(6) { animation-delay: 10s; }
+      .image-container img:nth-child(7) { animation-delay: 12s; }
+      .image-container img:nth-child(8) { animation-delay: 14s; }
+      .image-container img:nth-child(9) { animation-delay: 16s; }
+      .image-container img:nth-child(10) { animation-delay: 18s; }
+      .image-container img:nth-child(11) { animation-delay: 20s; }
+      .image-container img:nth-child(12) { animation-delay: 22s; }
+  
+      @keyframes slideShow {
+          0% { opacity: 0; }
+          8% { opacity: 1; }
+          17% { opacity: 1; }
+          25% { opacity: 0; }
+          100% { opacity: 0; }
+      }
+      .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 20px auto;
+        }
+
+        .image-container1 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .image-container1 img {
+            flex: 1 1 calc(25% - 20px);
+            max-width: calc(25% - 20px);
+            border-radius: 40px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 200px;
+            border: 5px solid #b0c7b2;
+
+        }
+
+        .image-container1 img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+
+  </style>
+ </head>
+<body id="top">
+    <div class="wrapper col1">
+        <div id="header">
+            <div id="logo">
+                <h1><a href="#">Tourism in KSA</a></h1>
+            </div>
+            <br class="clear" />
+        </div>
+    </div>
+    <div class="wrapper col2">
+        <div id="topbar">
+            <div id="topnav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">City</a>
+                      <ul>
+                        <li><a href="Jeddah.html">Jeddah</a></li>
+                        <li><a href="Riyadh.html">Riyadh</a></li>
+                        <li><a href="AUla.html">AL-Ula</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="events.html">Events</a></li>
+                    <li class="active"><a href="photo.html">Photo Gallery</a></li>
+                    <li><a href="contact_us.html">contact us</a></li>
+ 
+        <li ><a href="#">Register</a>
+          <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="newuser.html">New account</a></li>
+          </ul>
+        </li>
+                    
+        
+                </ul>
+            </div>
+            <br class="clear" />
+        </div>
+    </div>
+    <div class="wrapper col3">
+        <div id="container" style="height: 500px; padding: 20px !important;">
+            <div class="image-container">
+                <img src="..\images\demo\aa1.jpg" style="width:100%; border-radius: 30px;">
+                <img src="..\images\demo\rr2.jpg" style="width:100%; border-radius: 30px;">
+                <img src="..\images\demo\jj3.jpg" style="width:100%; border-radius: 30px;"> 
+                <img src="..\images\demo\1.jpg" style="width:100%; border-radius: 30px;">
+                <img src="..\images\demo\2.jpg" style="width:100%; border-radius: 30px;">
+                <img src="..\images\demo\3.jpg" style="width:100%;  border-radius: 30px;"> 
+                <img src="..\images\demo\4.jpg" style="width:100%;  border-radius: 30px;">
+                <img src="..\images\demo\5.jpg" style="width:100%;  border-radius: 30px;">
+                <img src="..\images\demo\6.jpg" style="width:100%;  border-radius: 30px;"> 
+                <img src="..\images\demo\7.jpg" style="width:100%;  border-radius: 30px;">
+                <img src="..\images\demo\8.jpg" style="width:100%; border-radius: 30px;">
+                <img src="..\images\demo\9.jpg" style="width:100%;  border-radius: 30px;">          
+                <img src="..\images\demo\10.jpg" style="width:100%;  border-radius: 30px;">
+                <img src="..\images\demo\11.jpg" style="width:100%;  border-radius: 30px;">
+                <img src="..\images\demo\12.jpg" style="width:100%;  border-radius: 30px;">  
+                <img src="..\images\demo\13.jpg" style="width:100%;  border-radius: 30px;">        
+            </div>
+        </div>
+    </div>
+    <div class="wrapper col4">
+        <div id="container" style="height:900px; padding: 20px !important;"> 
+            <div class="image-container1">
+                <img src="..\images\demo\aa1.jpg" style="width:100%; border-radius: 30px;">
+                <img src="..\images\demo\rr2.jpg" style="width:100%; border-radius: 30px;">
+                <img src="..\images\demo\jj3.jpg" style="width:100%; border-radius: 30px;"> 
+                <img src="..\images\demo\1.jpg" style="width:100%; border-radius: 30px;">
+                <img src="..\images\demo\2.jpg" style="width:100%; border-radius: 30px;">
+                <img src="..\images\demo\3.jpg" style="width:100%;  border-radius: 30px;"> 
+                <img src="..\images\demo\4.jpg" style="width:100%;  border-radius: 30px;">
+                <img src="..\images\demo\5.jpg" style="width:100%;  border-radius: 30px;">
+                <img src="..\images\demo\6.jpg" style="width:100%;  border-radius: 30px;"> 
+                <img src="..\images\demo\7.jpg" style="width:100%;  border-radius: 30px;">
+                <img src="..\images\demo\8.jpg" style="width:100%; border-radius: 30px;">
+                <img src="..\images\demo\9.jpg" style="width:100%;  border-radius: 30px;">          
+                <img src="..\images\demo\10.jpg" style="width:100%;  border-radius: 30px;">
+                <img src="..\images\demo\11.jpg" style="width:100%;  border-radius: 30px;">
+                <img src="..\images\demo\12.jpg" style="width:100%;  border-radius: 30px;">  
+                <img src="..\images\demo\13.jpg" style="width:100%;  border-radius: 30px;"> 
+            </div>
+        </div>
+    </div>  
+    <div class="wrapper col7">
+         <div id="copyright">
+    <p class="fl_left" style="margin-right:20px;">Copyright &copy; 2024 - All Rights Reserved - <a href="#">Tourism in KSA</a></p>
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <div class="social-icons">
+        <a href="https://tourisminksa18@gmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.instagram.com/tourism.inksa" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/0537443558" target="_blank" title="Phone number">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div> 
+	</section></p>
+    <br class="clear" />
+  </div>
+    </div>
+</body>
+</html>

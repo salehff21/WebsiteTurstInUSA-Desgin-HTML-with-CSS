@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>Tourism in KSA</title>
+<link rel="stylesheet" href="../layout/styles/layout.css" type="text/css" />
+    <style>
+        body { 
+		
+            font-family: Arial, sans-serif;
+        }
+        form {
+            max-width: 550px;
+            margin: 20px auto;
+            padding: 30px;
+            border: 5px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #000;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #666666;;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #666666;;
+        }
+        p a h3{
+            color: blue;
+        }
+    </style>
+</head>
+<body id="top">
+<div class="wrapper col1">
+  <div id="header">
+    <div id="logo">       
+     <h1><a href="#">Tourism in KSA</a></h1>  
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<div class="wrapper col2">
+    <div id="topbar">
+        <div id="topnav">
+            <ul>
+                <li ><a href="home.html">Home</a></li>
+                <li><a href="#">City</a>
+                  <ul>
+                    <li><a href="Jeddah.html">Jeddah</a></li>
+                    <li><a href="Riyadh.html">Riyadh</a></li>
+                    <li><a href="AUla.html">AL-Ula</a></li>
+                  </ul>
+                </li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="photo.html">Photo Gallery</a></li>
+                <li><a href="contact_us.html">contact us</a></li>
+  
+    <li class="active"><a href="#">Register</a>
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="newuser.html">New account</a></li>
+      </ul>
+    </li>
+            </ul>
+        </div>
+        <br class="clear" />
+    </div>
+  </div>
+    <div class="container">
+	<div id = "frm">  
+        <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
+           	<h1 style="text-align:center; ">Login</h1>  
+			          <br class="clear" />
+
+		   <p>  
+                <label> Email </label>  
+                <input type = "text" id ="user" name  = "user" />  
+            </p>  
+            <p>  
+                <label> Password: </label>  
+                <input type = "password" id ="pass" name  = "pass" />  
+            </p>  
+            <p>     
+                <input type =  "submit" id = "btn" value = "Login" />  
+            </p> 
+      		<p>Not registered ? <a href ="Newaccount.html">Create New Account</a></p>				
+        </form>  
+    </div> 
+       
+    </div>
+	          <br class="clear" />
+
+    <div class="wrapper col7">
+  <div id="copyright">
+    <p class="fl_left" style="margin-right:20px;">Copyright &copy; 2024 - All Rights Reserved - <a href="#">Tourism in KSA</a></p>
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <div class="social-icons">
+        <a href="https://tourisminksa18@gmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.instagram.com/tourism.inksa" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/0537443558" target="_blank" title="Phone number">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div> 
+	</section></p>
+    <br class="clear" />
+  </div>
+</div>
+<script>  
+            function validation()  
+            {  
+                var id=document.f1.user.value;  
+                var ps=document.f1.pass.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("User Name and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+        </script> 
+</body>
+</html>
